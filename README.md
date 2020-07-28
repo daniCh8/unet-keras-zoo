@@ -1,6 +1,7 @@
 # [U-Net](https://arxiv.org/abs/1505.04597) Keras Zoo
 
 - [U-Net Keras Zoo](#u-net-keras-zoo)
+  - [Network Types](#network-types)
     - [U-Net](#u-net)
     - [U-Xception Net](#u-xception-net)
     - [URes-Xception](#ures-xception)
@@ -11,6 +12,8 @@
     - [DeepRes-U-Net](#deepres-u-net)
     - [D-UNet](#d-unet)
   - [Network Inputs](#network-inputs)
+
+## Network Types
 
 This repository contains some implementations of mine of the well-known U-Net neural network. Most of the networks in the Zoo are based on the same architecture. Here is a scheme of it:
 
