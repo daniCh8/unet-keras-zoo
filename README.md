@@ -48,10 +48,10 @@ It's a U-Net that uses a pretrained ResNet50V2 as encoder. Like in the URes-Xcep
 ### [USpp-ResNet50V2 Net](/nets/uspp_resnet50v2.py)
 It's the same architecture of the network above, but instead of being processed by two residual blocks, the ResNetV2 outputs are refined by Spatial Pyramid blocks.
 
-### [DeepRes-U-Net](/src/nets/deepresunet.py)
+### [DeepRes-U-Net](/nets/deepresunet.py)
 It's a deep U-Net that does not use any pretrained net as encoder, and processes every intermediate output with residual blocks.
 
-### [D-UNet](/src/nets/dunet.py)
+### [D-UNet](/nets/dunet.py)
 It's a dimension fusion U-Net, that process the input both in 4D and 3D, before mixing all together. It's the implementation of [this paper](https://arxiv.org/abs/1908.05104).
 
 ## Network Inputs
