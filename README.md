@@ -3,12 +3,12 @@
 - [U-Net Keras Zoo](#u-net-keras-zoo)
   - [Network Types](#network-types)
     - [U-Net](#u-net)
-    - [U-Xception Net](#u-xception-net)
+    - [U-Xception](#u-xception)
     - [URes-Xception](#ures-xception)
     - [USpp-Xception](#uspp-xception)
-    - [U-ResNet50V2 Net](#u-resnet50v2-net)
-    - [URes-ResNet50V2 Net](#ures-resnet50v2-net)
-    - [USpp-ResNet50V2 Net](#uspp-resnet50v2-net)
+    - [U-ResNet50V2](#u-resnet50v2)
+    - [URes-ResNet50V2](#ures-resnet50v2)
+    - [USpp-ResNet50V2](#uspp-resnet50v2)
     - [DeepRes-U-Net](#deepres-u-net)
     - [D-UNet](#d-unet)
   - [Network Inputs](#network-inputs)
@@ -30,7 +30,7 @@ Enough with the high-level descriptions. Let's dig into the single networks:
 ### [U-Net](/nets/unet.py)
 It's a plain U-Net. No pretrained networks is used as encoder and no block is used to process the intermediate outputs.
 
-### [U-Xception Net](/nets/u_xception.py)
+### [U-Xception](/nets/u_xception.py)
 It's a U-Net that uses an Xception Net pretrained on the 'imagenet' dataset as encoder. The intermediate outputs of the Xception Net are taken as they are and fed to the decoders.
 
 ### [URes-Xception](/nets/ures_xception.py)
@@ -39,13 +39,13 @@ It's another U-Net that uses an Xception Net pretrained on the 'imagenet' datase
 ### [USpp-Xception](/nets/uspp_xception.py)
 It's the same architecture of the network above, but instead of being processed by two residual blocks, the Xception outputs are refined by Spatial Pyramid blocks.
 
-### [U-ResNet50V2 Net](/nets/u_resnet50v2.py)
+### [U-ResNet50V2](/nets/u_resnet50v2.py)
 It's a U-Net that uses a ResNet50V2 pretrained on the 'imagenet' dataset as encoder. The intermediate outputs of the ResNet50V2 are vanilla fed to the decoders.
 
-### [URes-ResNet50V2 Net](/nets/ures_resnet50v2.py)
+### [URes-ResNet50V2](/nets/ures_resnet50v2.py)
 It's a U-Net that uses a pretrained ResNet50V2 as encoder. Like in the URes-Xception Net, the intermediate outputs of the pretrained net are processed by two residual blocks before being fed to the decoders.
 
-### [USpp-ResNet50V2 Net](/nets/uspp_resnet50v2.py)
+### [USpp-ResNet50V2](/nets/uspp_resnet50v2.py)
 It's the same architecture of the network above, but instead of being processed by two residual blocks, the ResNetV2 outputs are refined by Spatial Pyramid blocks.
 
 ### [DeepRes-U-Net](/nets/deepresunet.py)
